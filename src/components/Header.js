@@ -1,20 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon } from "@fortawesome/free-solid-svg-icons";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
-const Header = () => {
-  const [dark, setDark] = useState(false);
-
-  const handleDark = () => {
-    setDark((prevState) => !prevState);
-  };
-
+const Header = ({ switchTheme, theme }) => {
   return (
     <div className="header-container">
       <h1>devfinder</h1>
       <div className="header-theme">
-        <p>{dark ? "LIGHT" : "DARK"}</p>
-        <FontAwesomeIcon className="header-icon" icon={faMoon} />
+        <p>{theme === "dark" ? "LIGHT" : "DARK"}</p>
+        {theme === "dark" ? (
+          <FontAwesomeIcon
+            className="header-icon"
+            icon={faSun}
+            onClick={switchTheme}
+          />
+        ) : (
+          <FontAwesomeIcon
+            className="header-icon"
+            icon={faMoon}
+            onClick={switchTheme}
+          />
+        )}
       </div>
     </div>
   );
