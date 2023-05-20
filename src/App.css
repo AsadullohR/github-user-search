@@ -101,9 +101,11 @@ HEADER */
     align-items: center;
     padding: 0.5rem;
     background-color:  var(--off-white);
+
     -webkit-box-shadow: 0px 16px 66px -47px rgba(75, 106, 155, 1);
     -moz-box-shadow: 0px 16px 66px -47px rgba(75, 106, 155, 1);
     box-shadow: 0px 16px 66px -47px rgba(75, 106, 155, 1);
+
     border-radius: 8px;
 }
 
@@ -111,6 +113,9 @@ HEADER */
     transform: rotate(5deg);
     color: var(--primary-blue);
     margin-left: 1rem;
+}
+.header-icon:hover{
+    cursor: pointer;
 }
 .search-and-input{
     width: 100%;

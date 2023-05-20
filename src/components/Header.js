@@ -13,12 +13,14 @@ const Header = ({ switchTheme, theme }) => {
             className="header-icon"
             icon={faSun}
             onClick={switchTheme}
+            size="xl"
           />
         ) : (
           <FontAwesomeIcon
             className="header-icon"
             icon={faMoon}
             onClick={switchTheme}
+            size="xl"
           />
         )}
       </div>

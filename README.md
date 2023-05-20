@@ -1,6 +1,6 @@
 # Search users on GitHub
 
-You see [Live Demo](https://github-user-search.netlify.app) here.
+You see [Live Demo](https://ghubusersearch.netlify.app/) here.
 
 ## Better GitHub Profile UI
 <<<<<<< HEAD
