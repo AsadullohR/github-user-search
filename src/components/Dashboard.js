@@ -44,8 +44,8 @@ const Dashboard = ({ switchTheme, theme }) => {
       />
       {user ? (
         <div className="dashboard-info-container">
-          <img className="user-img" src={user.avatar_url} />
-          {user != "" ? (
+          <img alt="user" className="user-img" src={user.avatar_url} />
+          {user !== "" ? (
             <div className="info-part">
               <div className="upper-part">
                 <div className="bio">
