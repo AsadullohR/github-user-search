@@ -261,6 +261,9 @@ HEADER */
     .dashboard-container{
         width: 85vw;
     }
+    .search-input{
+        font-size: 0.7rem;
+    }
     .dashboard-info-container{
         flex-direction: column;
     }
@@ -272,6 +275,16 @@ HEADER */
     }
     .upper-part{
         margin-top: 2rem;
+    }
+    .date-joined{
+        font-size: 0.6rem;
+        margin-left: 2rem;
+    }
+    .data p{
+        font-size: 0.5rem;
+    }
+    .data div{
+        font-size: 0.7rem;
     }
     .middle-part{
         flex-direction: row;

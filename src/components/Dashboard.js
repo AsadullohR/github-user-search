@@ -51,17 +51,17 @@ const Dashboard = ({ switchTheme, theme }) => {
                 <div className="bio">
                   <h1 className="user-name">{user.name}</h1>
                   <p className="user-login">{`@${user.login}`}</p>
-                  <p className="user-bio">
-                    {user.bio ? user.bio : "User has no bio."}
-                    {user.bio}
-                  </p>
                 </div>
+
                 <div className="date-joined">
                   {`Joined ${moment(user.created_at).format("Do MMM YY")}`}
                 </div>
               </div>
+              <p className="user-bio">
+                {user.bio ? user.bio : "User has no bio."}
+              </p>
               <div className="middle-part">
-                <div className="repos">
+                <div className="data repos">
                   <p>Repos</p>
                   <div>{user.public_repos}</div>
                 </div>
