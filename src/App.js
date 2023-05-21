@@ -1,7 +1,6 @@
 import "./App.css";
 import Dashboard from "./components/Dashboard";
 import { useState } from "react";
-// import useLocalStorage from "use-local-storage";
 
 function App() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;

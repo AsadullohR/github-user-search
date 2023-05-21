@@ -65,11 +65,11 @@ const Dashboard = ({ switchTheme, theme }) => {
                   <p>Repos</p>
                   <div>{user.public_repos}</div>
                 </div>
-                <div className="followers">
+                <div className="data followers">
                   <p>Followers</p>
                   <div>{user.followers}</div>
                 </div>
-                <div className="following">
+                <div className="data following">
                   <p>Following</p>
                   <div>{user.following}</div>
                 </div>

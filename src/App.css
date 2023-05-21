@@ -191,8 +191,15 @@ HEADER */
 .upper-part{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
+.bio{
+    flex: 2 1 0;
+}
+.date-joined{
+    flex: 1 1 0;
+}
+
 .user-name{
     color: var(--dark-grey);
 }
@@ -251,15 +258,25 @@ HEADER */
 }
 
 @media only screen and (max-width: 768px) {
+    .dashboard-container{
+        width: 85vw;
+    }
     .dashboard-info-container{
         flex-direction: column;
     }
     .user-img{
         margin: 0 auto;
     }
+    .info-part{
+        margin: 0 auto;
+    }
     .upper-part{
         margin-top: 2rem;
     }
+    .middle-part{
+        flex-direction: row;
+    }
+
     .bottom-part{
         flex-direction: column;
         align-items: start;
